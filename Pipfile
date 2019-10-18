@@ -13,6 +13,7 @@ py-openaq = "*"
 requests = "*"
 gunicorn = "*"
 psycopg2-binary = "*"
+shell = "*"
 
 [requires]
 python_version = "3.7"

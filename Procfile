@@ -1,1 +1,1 @@
-web: gunicorn test:APP -t 1200
+web: gunicorn airq:APP -t 1200
