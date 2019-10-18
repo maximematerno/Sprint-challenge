@@ -39,7 +39,7 @@ def root():
 
 @APP.route('/refresh')
 def refresh():
-    """Pull fresh data from Open AQ and replace existing data."""
+    """New data  replace existing one."""
     DB.drop_all()
     DB.create_all()
     data = get_measurements()
@@ -53,7 +53,7 @@ def refresh():
 
 @APP.route('/locations/<city>')
 def locations(city='Los Angeles'):
-    """Pull location meta-data from Open AQ and display it."""
+    """ location Los Angeles."""
     api = openaq.OpenAQ()
     status, body = api.locations(city=city)
     locations = [{'name': loc['location'],
