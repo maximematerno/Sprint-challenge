@@ -11,6 +11,8 @@ flask-sqlalchemy = "*"
 openaq = "*"
 py-openaq = "*"
 requests = "*"
+gunicorn = "*"
+psycopg2-binary = "*"
 
 [requires]
 python_version = "3.7"
